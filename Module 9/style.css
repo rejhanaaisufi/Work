@@ -1,0 +1,69 @@
+body{
+    background:url("https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg");
+    /* font-family:"Bionic City" ; */
+}
+@font-face {
+    font-family: "Bionic City";
+    src: url("fonts/Bionic\ City.otf");
+}
+p{
+    /* color:#85C1E9;
+    font-size: 20px;
+    margin: 25px 50px 75px;
+    padding: 100px 20px 30px 50px;
+    border: 2px solid white; */
+    text-indent: 50px;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.headings{
+    background-color: lightgray;
+    width: 350px;
+    border: 5px solid green;
+    padding:10px;
+    margin: 0px;
+}
+h1{
+    color:darkmagenta;
+    letter-spacing: 5px;
+    font-style: normal;
+    font-weight: normal;
+}
+h2{
+    color:red;
+    word-spacing: 20px;
+    font-style: italic;
+    font-weight: 900;
+}
+h3{
+    color:blue;
+    text-decoration: overline;
+
+}
+h4{
+    color:green;
+    text-decoration: line-through;
+}
+h5{
+    color:purple;
+    text-decoration: underline;
+}
+h6{
+    color:aqua;
+}
+a:link{
+    color:red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color:hotpink;
+}
+a:active{
+    color: blue;
+}
