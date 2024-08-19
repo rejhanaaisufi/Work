@@ -12,6 +12,9 @@
     animation: bounce 8s infinite alternate;
 }
 
+.loader img:nth-child(1){
+    animation-delay: 0s;
+}
 .loader img:nth-child(2){
     animation-delay: 2s;
 }
