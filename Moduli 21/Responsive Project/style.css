@@ -216,3 +216,63 @@ header img{
     height: 37px;
 }
 
+@media only screen and (max-width:800px){
+    header{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    header img{
+        margin-left: auto;
+        margin-left: auto;
+    }
+
+    .main-heading h1{
+        font-size: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right:auto;
+
+    }
+    .main-heading a{
+        font-size: 13px;
+        padding: 25px;
+    }
+    .main-heading{
+        margin: 0px;
+    }
+    nav ul li.active{
+        padding-right: 0px;
+
+    }
+    nav ul{
+        padding-left: 0px;
+    }
+    .service{
+        width: 100%;
+    }
+    .service-box{
+        flex-direction: column;
+    }
+    .title-box{
+        width: 95%;
+    }
+    .form-row{
+        flex-direction: column;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+    footer ul li {
+        text-align: center;
+    }
+}
