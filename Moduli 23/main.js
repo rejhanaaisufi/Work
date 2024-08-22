@@ -7,35 +7,35 @@
 // showMessage()
 
 function sum(number1, number2){
-    return number1 + number2
+    return number1 + number2;
 }
 
-console.log(sum(30,45))
+console.log(sum(30,45));
 
 function toCelcius(f){
-    return (5/9)*(f-32)
+    return (5/9)*(f-32);
 }
-console.log("54 Fahrenheit is equal to " + toCelcius(54)+"celsius")
+console.log("54 Fahrenheit is equal to " + toCelcius(54)+"celsius");
 
 var result = toCelcius(54)
-console.log("54 Fahrenheit is equal to" + result+ "celsius")
+console.log("54 Fahrenheit is equal to" + result+ "celsius");
 
 function ds(){
-    var localVar = "digital School"
-    alert(localVar)
+    var localVar = "digital School";
+    alert(localVar);
 }
 ds()
 
 function toSeconds(minutes){
-    return minutes * 60 
+    return minutes * 60 ;
 }
-console.log(toSeconds(60))
+console.log(toSeconds(60));
 
 function triangle(lenght,height){
-    return 0.5 * lenght * height
+    return 0.5 * lenght * height;
 }
 
-console.log(triangle(5,7))
+console.log(triangle(5,7));
 
 
 //Objects_______________________
@@ -56,21 +56,22 @@ var car = {
     }
 
 }
-console.log(car.getKm)
+console.log(car.getKm);
 
-car.setKm = 100
-console.log(car.getKm)
+car.setKm = 100;
+console.log(car.getKm);
 
-alert(car['color'])
+alert(car['color']);
 
-car.startEngine()
+car.startEngine();
 
 var school = {
-    name:"Digital",
-    subject:"Programming",
+    name:"Digital,",
+    subject:"Programming,",
     students:1500,
     year:2019
 }
 
-console.log(school.name)
+// console.log(school.name, school.subject, school.students, school.year); mundemi edhe kshut
 
+console.log(school.name);
