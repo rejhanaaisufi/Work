@@ -32,7 +32,7 @@ document.getElementById('rez6').innerHTML = text6.match(regex2)
 
 var text7 = "Digital School is in top 10 best schools"
 var regex3 = /[0-9]/g;
-document.getElementById('rez8').innerHTML =text7.match(regex3)
+document.getElementById('rez8').innerHTML = text7.match(regex3)
 
 var text8="100 percent"
 var regex4 = /\d/g;
