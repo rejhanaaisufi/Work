@@ -26,6 +26,7 @@ function randomColor(){
     for(var i = 0; i < 6; i++){
         color = color + s[Math.floor(Math.random()*16)];
     }
+    
     return color;
 }
 
