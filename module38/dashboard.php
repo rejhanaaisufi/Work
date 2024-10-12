@@ -29,6 +29,7 @@
     <table>
     <thead>
         <th>ID</th>
+        <th>Username</th>
         <th>Name</th>
         <th>Surname</th>
         <th>Email</th>
@@ -40,6 +41,7 @@
             ?>
             <tr>
                 <td> <?= $user['id']?></td>
+                <td> <?= $user['username']?></td>
                 <td> <?= $user['name']?></td>
                 <td> <?= $user['surname']?></td>
                 <td> <?= $user['email']?></td>
