@@ -4,7 +4,7 @@ session_start();
 $user="root";
 $pass="";
 $server="localhost";
-$dbname="db";
+$dbname="db2";
 
 try {
 	
@@ -13,4 +13,6 @@ try {
 } catch (PDOException $e) {
 	echo "error: " . $e->getMessage();
 }
- ?> 
+ ?>
+
+

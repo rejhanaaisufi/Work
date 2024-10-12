@@ -1,16 +1,10 @@
 <?php
-
  $username = $_GET['username'];
  $password = $_GET['password'];
  echo $username;
  echo "<br>";
  echo $password;
- 
-//  include_once 'config.php';
-//  include_once ('config.php');
-
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -24,4 +18,6 @@
         </form>
 
     </body>
-</html> 
+</html>
+
+
