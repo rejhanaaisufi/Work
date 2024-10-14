@@ -1,32 +1,38 @@
-<?php
+<?php 
 
-  include_once('config.php');
-  if(isset($_POST['update'])){
-   
-    $id = $_POST ['id'];
-    $username = $_POST['username'];
-    $name = $_POST['name'];
-    $surname = $_POST['surname'];
-    $email = $_POST['email'];
+	include_once('config.php');
 
-    $sql = "UPDATE user SET username=:username, name=:name,surname=:surname, email=:email WHERE id=:id";
-    $prep = $conn->prepare($sql);
-    $prep->bindParam(":id",$id);
-    $prep->bindParam(":username",$username);
-    $prep->bindParam(":name",$name);
-    $prep->bindParam(":surname",$surname);
-    $prep->bindParam(":email",$email);
+	if(isset($_POST['update']))
+	{
+		$id=$_POST['id'];
+		$name = $_POST['name'];
+		$surname = $_POST['surname'];
+		$username = $_POST['username'];
+		$email = $_POST['email'];
+		$tempPass = $_POST['password'];
+		$password = password_hash($tempPass, PASSWORD_DEFAULT);
 
-    $prep->execute();
+		if(empty($name) || empty($surname) || empty($username) || empty($email) || empty($password))
+		{
+			echo "You need to fill all the fields.";
+			header( "refresh:2; url=profile.php" ); 
+		}
+		else
+		{
+			$sql= "UPDATE user SET name=:name, surname=:surname, username=:username, email=:email, password=:password WHERE id=:id";
 
-    header("Location:dashboard.php");
+			$updateSql = $conn->prepare($sql);
 
-  }
-  
+			$updateSql->bindParam(':id', $id);
+			$updateSql->bindParam(':name', $name);
+			$updateSql->bindParam(':surname', $surname);
+			$updateSql->bindParam(':username', $username);
+			$updateSql->bindParam(':email', $email);
+			$updateSql->bindParam(':password', $password);
+
+			$updateSql->execute();
+
+			header('Location: logout.php');
+		}
+	}
 ?>
-
-
-
-
-
- 
